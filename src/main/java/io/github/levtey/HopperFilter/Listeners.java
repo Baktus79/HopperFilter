@@ -44,9 +44,7 @@ public class Listeners implements Listener {
 			(isDiagonal(frame) ? exclude : include).add(item);
 		}
 		ItemStack item = evt.getItem();
-		if ((!include.isEmpty() && !isPartOf(include, item)) || isPartOf(exclude, item)) {
-			evt.setCancelled(true);
-		}
+		evt.setCancelled((!include.isEmpty() && !isPartOf(include, item)) || isPartOf(exclude, item));
 	}
 	
 	private boolean isPartOf(List<ItemStack> filter, ItemStack item) {

@@ -1,4 +1,8 @@
-name: HopperFilter
+name: ${project.artifactId}
 main: io.github.levtey.HopperFilter.HopperFilter
-version: 0.1
-api-version: 1.13
+version: ${project.version}
+authors: [Baktus_79]
+description: Filter hopper items with item frames!
+website: www.vestlandetmc.no
+prefix: ${project.artifactId}
+api-version: 1.19
